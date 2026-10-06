@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Assinaturas para concursos | Protótipo acadêmico</title>
+  <meta name="description" content="Protótipo de página de assinaturas para concursos, desenvolvido para fins acadêmicos.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="pular" href="#planos">Ir para os planos</a>
+
+<!-- CABEÇALHO -->
+<header class="topo">
+  <div class="container topo__linha">
+    <a class="marca" href="#inicio">Estratégia Concursos</a>
+    <nav class="menu" aria-label="Principal">
+      <a href="#planos">Planos</a>
+      <a href="#comparar">Comparar</a>
+      <a href="#concursos">Concursos</a>
+      <a href="#resultados">Resultados</a>
+      <a href="#duvidas">Dúvidas</a>
+    </nav>
+    <a class="btn btn--pequeno" href="#planos">Assinar</a>
+  </div>
+</header>
+
+<main id="inicio">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero__grade">
+      <div class="hero__texto">
+        <h1>Estude com quem mais aprova</h1>
+        <p class="hero__sub">Estude para concursos sem preocupações por menos de R$ 4 ao dia com a assinatura ilimitada. Método escolhido por mais de 70% dos aprovados.</p>
+        <div class="hero__acoes">
+          <a class="btn btn--grande" href="#planos">Ver planos e preços</a>
+          <a class="link-claro" href="#comparar">Comparar Básica e Premium</a>
+        </div>
+      </div>
+      <dl class="hero__numeros">
+        <div>
+          <dt>dos aprovados estudam com o Estratégia</dt>
+          <dd>70%</dd>
+        </div>
+        <div>
+          <dt>cursos para as mais diversas áreas</dt>
+          <dd>18 mil</dd>
+        </div>
+        <div>
+          <dt>questões de concursos cadastradas</dt>
+          <dd>3,2 milhões</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- PLANOS -->
+  <section class="secao" id="planos">
+    <div class="container">
+      <h2>Escolha a sua assinatura</h2>
+      <p class="secao__intro">Acesso a todos os pacotes de cursos da plataforma. Você pode se matricular em até 3 concursos ao mesmo tempo e trocar quando precisar.</p>
+
+      <div class="periodo">
+        <input class="sr-only" type="radio" name="periodo" id="p1" checked>
+        <input class="sr-only" type="radio" name="periodo" id="p2">
+
+        <div class="alternador" role="group" aria-label="Período da assinatura">
+          <label for="p1">1 ano</label>
+          <label for="p2">2 anos</label>
+        </div>
+
+        <!-- 1 ANO -->
+        <div class="planos planos--1">
+          <article class="plano">
+            <h3>Básica <span>1 ano</span></h3>
+            <p class="plano__resumo">Todo o conteúdo e as ferramentas de estudo essenciais.</p>
+            <p class="preco-antigo">De 12x R$ 139,90</p>
+            <p class="preco">12x R$ 109,90</p>
+            <p class="preco-pix">ou R$ 1.186,92 no Pix ou boleto (+10% OFF) <s>R$ 1.510,92</s></p>
+            <p class="economia">Economize até R$ 324,00 (21% OFF)</p>
+            <a class="btn btn--contorno" href="#">Assine agora</a>
+            <a class="link-pix" href="#">Assinar no Pix ou boleto</a>
+            <ul class="lista-plano">
+              <li class="ok">18 mil cursos e 100 mil videoaulas</li>
+              <li class="ok">Sistema de Questões com 3,2 milhões de questões</li>
+              <li class="ok">Cast Concursos, com mais de 10 mil aulas em áudio</li>
+              <li class="ok">Resumos, mapas mentais e marcação dos aprovados</li>
+              <li class="no">Trilha, Passo Estratégico, Monitorias e Salas VIP</li>
+            </ul>
+          </article>
+
+          <article class="plano plano--destaque">
+            <p class="selo">Melhor oferta</p>
+            <h3>Premium <span>1 ano</span></h3>
+            <p class="plano__resumo">Tudo da Básica, com planejamento, revisão dirigida e acompanhamento.</p>
+            <p class="preco-antigo">De 12x R$ 269,90</p>
+            <p class="preco">12x R$ 219,90</p>
+            <p class="preco-pix">ou R$ 2.374,92 no Pix ou boleto (+10% OFF) <s>R$ 2.914,92</s></p>
+            <p class="economia">Economize até R$ 540,00 (18% OFF)</p>
+            <a class="btn" href="#">Assine agora</a>
+            <a class="link-pix" href="#">Assinar no Pix ou boleto</a>
+            <ul class="lista-plano">
+              <li class="ok">18 mil cursos e 100 mil videoaulas</li>
+              <li class="ok">Sistema de Questões com 3,2 milhões de questões</li>
+              <li class="ok">Cast Concursos, com mais de 10 mil aulas em áudio</li>
+              <li class="ok">Resumos, mapas mentais e marcação dos aprovados</li>
+              <li class="ok">Trilha Estratégica, Passo Estratégico e Monitorias</li>
+              <li class="ok">Salas VIP e Rodadas Avançadas de Simulados</li>
+            </ul>
+          </article>
+        </div>
+
+        <!-- 2 ANOS -->
+        <div class="planos planos--2">
+          <article class="plano">
+            <h3>Básica <span>2 anos</span></h3>
+            <p class="plano__resumo">Todo o conteúdo e as ferramentas de estudo essenciais.</p>
+            <p class="preco-antigo">De 12x R$ 209,90</p>
+            <p class="preco">12x R$ 169,90</p>
+            <p class="preco-pix">ou R$ 1.834,92 no Pix ou boleto (+10% OFF) <s>R$ 2.266,92</s></p>
+            <p class="economia">Economize até R$ 432,00 (19% OFF)</p>
+            <a class="btn btn--contorno" href="#">Assine agora</a>
+            <a class="link-pix" href="#">Assinar no Pix ou boleto</a>
+            <ul class="lista-plano">
+              <li class="ok">18 mil cursos e 100 mil videoaulas</li>
+              <li class="ok">Sistema de Questões com 3,2 milhões de questões</li>
+              <li class="ok">Cast Concursos, com mais de 10 mil aulas em áudio</li>
+              <li class="ok">Resumos, mapas mentais e marcação dos aprovados</li>
+              <li class="no">Trilha, Passo Estratégico, Monitorias e Salas VIP</li>
+            </ul>
+          </article>
+
+          <article class="plano plano--destaque">
+            <p class="selo">Melhor oferta</p>
+            <h3>Premium <span>2 anos</span></h3>
+            <p class="plano__resumo">Tudo da Básica, com planejamento, revisão dirigida e acompanhamento.</p>
+            <p class="preco-antigo">De 12x R$ 449,90</p>
+            <p class="preco">12x R$ 369,90</p>
+            <p class="preco-pix">ou R$ 3.994,92 no Pix ou boleto (+10% OFF) <s>R$ 4.858,92</s></p>
+            <p class="economia">Economize até R$ 864,00 (17% OFF)</p>
+            <a class="btn" href="#">Assine agora</a>
+            <a class="link-pix" href="#">Assinar no Pix ou boleto</a>
+            <ul class="lista-plano">
+              <li class="ok">18 mil cursos e 100 mil videoaulas</li>
+              <li class="ok">Sistema de Questões com 3,2 milhões de questões</li>
+              <li class="ok">Cast Concursos, com mais de 10 mil aulas em áudio</li>
+              <li class="ok">Resumos, mapas mentais e marcação dos aprovados</li>
+              <li class="ok">Trilha Estratégica, Passo Estratégico e Monitorias</li>
+              <li class="ok">Salas VIP e Rodadas Avançadas de Simulados</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+
+      <div class="garantia">
+        <h3>O único com garantia dupla</h3>
+        <p><strong>Atualização permanente</strong> sem custo adicional e <strong>satisfação garantida de 7 dias</strong>, com reembolso integral em caso de cancelamento.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPARATIVO BÁSICA x PREMIUM -->
+  <section class="secao secao--cinza" id="comparar">
+    <div class="container">
+      <h2>Compare as assinaturas</h2>
+      <p class="secao__intro">A Premium inclui tudo o que a Básica oferece, mais cinco recursos de planejamento e acompanhamento.</p>
+
+      <div class="tabela-rolagem">
+        <table class="tabela">
+          <caption class="sr-only">Recursos incluídos em cada assinatura</caption>
+          <thead>
+            <tr>
+              <th scope="col">Recurso</th>
+              <th scope="col">Básica</th>
+              <th scope="col" class="col-destaque">Premium</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="grupo"><th colspan="3" scope="colgroup">Conteúdo</th></tr>
+            <tr>
+              <th scope="row">Livro Digital Interativo<small>Combina texto, áudio e vídeo.</small></th>
+              <td class="ok"><span class="sr-only">Incluso</span></td>
+              <td class="ok col-destaque"><span class="sr-only">Incluso</span></td>
+            </tr>
+            <tr>
+              <th scope="row">18 mil cursos<small>Para as mais diversas áreas.</small></th>
+              <td class="ok"><span class="sr-only">Incluso</span></td>
+              <td class="ok col-destaque"><span class="sr-only">Incluso</span></td>
+            </tr>
+            <tr>
+              <th scope="row">100 mil videoaulas<small>Com professores renomados.</small></th>
+              <td class="ok"><span class="sr-only">Incluso</span></td>
+              <td class="ok col-destaque"><span class="sr-only">Incluso</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Livro Digital Simplificado<small>PDF com conteúdo mais enxuto, direto ao que realmente importa para acertar questões, sem ser superficial.</small></th>
+              <td class="ok"><span class="sr-only">Incluso</span></td>
+              <td class="ok col-destaque"><span class="sr-only">Incluso</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Resumos<small>Resumos completos dos professores e Bizus: resumos de 30 páginas por disciplina, feitos por ex-alunos aprovados, ideais para o pós-edital.</small></th>
+              <td class="ok"><span class="sr-only">Incluso</span></td>
+              <td class="ok col-destaque"><span class="sr-only">Incluso</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Marcação dos Aprovados<small>PDF com as partes mais importantes já marcadas por aprovados em concursos.</small></th>
+              <td class="ok"><span class="sr-only">Incluso</span></td>
+              <td class="ok col-destaque"><span class="sr-only">Incluso</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Mapas Mentais<small>Esquemas gráficos para entender a matéria de maneira visual.</small></th>
+              <td class="ok"><span class="sr-only">Incluso</span></td>
+              <td class="ok col-destaque"><span class="sr-only">Incluso</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Cast Concursos<small>Mais de 10 mil aulas em áudio pelo app: completas, de Reta Final, focadas em editais específicos e de legislação.</small></th>
+              <td class="ok"><span class="sr-only">Incluso</span></td>
+              <td class="ok col-destaque"><span class="sr-only">Incluso</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Cursos Especiais (Exclusivos)<small>Cursos exclusivos para assinantes.</small></th>
+              <td class="ok"><span class="sr-only">Incluso</span></td>
+              <td class="ok col-destaque"><span class="sr-only">Incluso</span></td>
+            </tr>
+
+            <tr class="grupo"><th colspan="3" scope="colgroup">Prática e desempenho</th></tr>
+            <tr>
+              <th scope="row">Sistema de Questões<small>Mais de 3,2 milhões de questões de concursos para estudar sem limites.</small></th>
+              <td class="ok"><span class="sr-only">Incluso</span></td>
+              <td class="ok col-destaque"><span class="sr-only">Incluso</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Monitor de Performance<small>Acompanhe questões resolvidas por período e por matéria, seu percentual de acertos e a média dos outros alunos.</small></th>
+              <td class="ok"><span class="sr-only">Incluso</span></td>
+              <td class="ok col-destaque"><span class="sr-only">Incluso</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Rodadas Avançadas de Simulados<small>Questões inéditas elaboradas pelos professores, de acordo com o perfil da sua banca, para simular o dia da prova.</small></th>
+              <td class="no"><span class="sr-only">Não incluso</span></td>
+              <td class="ok col-destaque"><span class="sr-only">Incluso</span></td>
+            </tr>
+
+            <tr class="grupo"><th colspan="3" scope="colgroup">Planejamento e apoio</th></tr>
+            <tr>
+              <th scope="row">Trilha Estratégica<small>Planejamento completo, dividido em tarefas: o que estudar, quais questões resolver e o que revisar, com os assuntos de maior e menor chance de cair em prova.</small></th>
+              <td class="no"><span class="sr-only">Não incluso</span></td>
+              <td class="ok col-destaque"><span class="sr-only">Incluso</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Passo Estratégico<small>Abordagem sucinta que prioriza os assuntos mais cobrados nos últimos concursos, com simulados inéditos no estilo da banca.</small></th>
+              <td class="no"><span class="sr-only">Não incluso</span></td>
+              <td class="ok col-destaque"><span class="sr-only">Incluso</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Monitorias<small>Direcionamento e acompanhamento com técnicas de estudo, sugestão de planejamento e motivação, em transmissões ao vivo.</small></th>
+              <td class="no"><span class="sr-only">Não incluso</span></td>
+              <td class="ok col-destaque"><span class="sr-only">Incluso</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Salas VIP<small>Videoconferência ao vivo com um aprovado para tirar todas as suas dúvidas.</small></th>
+              <td class="no"><span class="sr-only">Não incluso</span></td>
+              <td class="ok col-destaque"><span class="sr-only">Incluso</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="nota">Não estão incluídos nas assinaturas: OAB e CFC (e outras certificações contábeis); carreiras jurídicas (Magistratura, Ministério Público, Procuradorias, Delegado, Defensor Público, Advocacia Pública); Forças Armadas; Diplomacia; cursos presenciais; recursos; cursos de Odontologia para Forças Armadas; cursos personalizados; curso presencial e on-line Cascavel; vestibulares e ENEM; e estudo acompanhado.</p>
+    </div>
+  </section>
+
+  <!-- CONCURSOS EM DESTAQUE -->
+  <section class="secao" id="concursos">
+    <div class="container">
+      <h2>Seja aprovado no concurso dos seus sonhos</h2>
+      <p class="secao__intro">Concursos em destaque, com vagas e remuneração inicial.</p>
+
+      <ul class="grade-cartoes">
+        <li class="cartao">
+          <h3>MPU</h3>
+          <p class="situacao">Edital publicado</p>
+          <p>172 vagas (+CR)</p>
+          <p class="valor">R$ 9.767,20 a R$ 14.852,98</p>
+        </li>
+        <li class="cartao">
+          <h3>ICMBio</h3>
+          <p class="situacao">Edital publicado</p>
+          <p>350 vagas</p>
+          <p class="valor">R$ 8.817,70</p>
+        </li>
+        <li class="cartao">
+          <h3>Embrapa</h3>
+          <p class="situacao">Edital publicado</p>
+          <p>1.027 vagas imediatas + CR</p>
+          <p class="valor">Até R$ 12.800,00</p>
+        </li>
+        <li class="cartao">
+          <h3>INSS</h3>
+          <p>7.655 vagas solicitadas</p>
+          <p>Níveis médio e superior</p>
+          <p class="valor">R$ 5.938,09 a R$ 9.767,20</p>
+        </li>
+        <li class="cartao">
+          <h3>IBAMA</h3>
+          <p>460 vagas</p>
+          <p>Nível superior</p>
+          <p class="valor">R$ 8.817,70</p>
+        </li>
+        <li class="cartao">
+          <h3>PF Administrativo</h3>
+          <p>192 vagas autorizadas</p>
+          <p>Níveis médio e superior</p>
+          <p class="valor">R$ 4.746,16 a R$ 7.087,29</p>
+        </li>
+        <li class="cartao">
+          <h3>PRF</h3>
+          <p>4.092 vagas solicitadas</p>
+          <p>Níveis médio e superior</p>
+          <p class="valor">R$ 10.790,87</p>
+        </li>
+        <li class="cartao">
+          <h3>Sefaz RJ</h3>
+          <p>50 vagas</p>
+          <p>Nível superior</p>
+          <p class="valor">Até R$ 27.000,00</p>
+        </li>
+        <li class="cartao">
+          <h3>TRT 15</h3>
+          <p class="situacao">Edital publicado</p>
+          <p>Nível superior em diversas áreas</p>
+          <p class="valor">Até R$ 16 mil</p>
+        </li>
+        <li class="cartao">
+          <h3>SUSEP</h3>
+          <p>75 vagas</p>
+          <p>Nível superior</p>
+          <p class="valor">R$ 20.924,80</p>
+        </li>
+        <li class="cartao">
+          <h3>Sefaz PR</h3>
+          <p>50 vagas</p>
+          <p>Nível superior</p>
+          <p class="valor">R$ 20.924,80</p>
+        </li>
+      </ul>
+
+      <h3 class="subtitulo">68 mil vagas previstas, com estabilidade e ganhos mensais de até R$ 30 mil</h3>
+
+      <div class="areas">
+        <section>
+          <h4>Fiscal</h4>
+          <ul><li>Sefaz RJ</li><li>Sefaz PR</li><li>Sefaz PA</li><li>ISS Arraial do Cabo</li><li>Sefaz SE</li><li>Sefaz PI</li><li>Sefaz SP (contábil)</li><li>Sefaz BA</li><li>Sefaz DF</li><li>Sefaz GO</li></ul>
+        </section>
+        <section>
+          <h4>Controle</h4>
+          <ul><li>TCE RJ</li><li>TCE RR</li><li>CGE SP</li><li>CGM SP</li><li>CGE RS</li><li>TCM RJ</li><li>TCE SP</li><li>TCE MS</li><li>CGE MA</li><li>TCE MA</li></ul>
+        </section>
+        <section>
+          <h4>Tribunais</h4>
+          <ul><li>MPU</li><li>TJ RJ</li><li>TRT RJ</li><li>TRT SP</li><li>TRE TO</li><li>TRT 10</li><li>TRT MS</li><li>STM</li><li>TJ CE</li><li>TJ PB</li><li>TJMG</li><li>TRT PE</li><li>DPU</li></ul>
+        </section>
+        <section>
+          <h4>Policial</h4>
+          <ul><li>PF administrativo</li><li>PF</li><li>PRF</li><li>PMDF</li><li>PCDF Agente de custódia</li><li>PC MA</li><li>PC TO</li><li>PM TO</li><li>PC PI</li><li>PM CE</li><li>PC CE</li><li>Polícia Penal RJ</li><li>Detran RN</li><li>Detran TO</li><li>PM BA</li></ul>
+        </section>
+        <section>
+          <h4>Legislativo</h4>
+          <ul><li>ALE ES</li><li>ALE RR</li><li>ALE RO</li><li>ALE GO</li><li>AL MS</li><li>CLDF</li><li>ALBA</li><li>ALE AM</li><li>ALE AC</li></ul>
+        </section>
+        <section>
+          <h4>Saúde</h4>
+          <ul><li>EBSERH</li><li>SEDF Especialista</li><li>Hemominas</li><li>SESA AP</li><li>Hemocentro DF</li><li>SES SE</li><li>SESAP RN</li><li>FUNEAS PR</li></ul>
+        </section>
+        <section>
+          <h4>Educação</h4>
+          <ul><li>SEED AP</li><li>SEDUC PA</li><li>SEE PB</li><li>SEDU ES</li><li>SME Natal</li><li>SEDUC AM</li><li>SEDF</li><li>SEDUC RO</li><li>SEDUC MT</li></ul>
+        </section>
+        <section>
+          <h4>Bancária e financeira</h4>
+          <ul><li>Banco do Brasil</li><li>BanPará</li><li>SUSEP</li><li>Banese</li></ul>
+        </section>
+        <section>
+          <h4>Prefeituras</h4>
+          <ul><li>Prefeitura de Búzios</li><li>Prefeitura de Cariacica</li><li>Arraial do Cabo</li><li>Prefeitura de SP (analista em T.I.)</li><li>Prefeitura de Maceió</li><li>Prefeitura de Petrópolis</li></ul>
+        </section>
+        <section>
+          <h4>Agências reguladoras</h4>
+          <ul><li>ANTT</li><li>AEB</li><li>ANM</li></ul>
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRIVILÉGIOS -->
+  <section class="secao secao--cinza">
+    <div class="container">
+      <h2>Conquiste os privilégios de apenas 5,3% da população brasileira</h2>
+
+      <ul class="grade-cartoes grade-cartoes--3">
+        <li class="cartao">
+          <h3>Estabilidade</h3>
+          <p>Nunca mais se preocupe com crises ou com o fantasma do desemprego. Conquiste a segurança de um cargo público e construa um futuro sólido.</p>
+        </li>
+        <li class="cartao">
+          <h3>Regalias</h3>
+          <p>Desfrute de uma série de benefícios exclusivos, como férias remuneradas, regime próprio de previdência e adicionais que engordam ainda mais o bolso.</p>
+        </li>
+        <li class="cartao">
+          <h3>Altos salários</h3>
+          <p>Salários superiores aos da iniciativa privada, podendo começar a carreira com até R$ 35 mil. Mais do que um trabalho, é liberdade financeira.</p>
+        </li>
+        <li class="cartao">
+          <h3>Seleção impessoal</h3>
+          <p>Para ser servidor público, basta sua dedicação e uma aprovação. Seu esforço é o único pré-requisito.</p>
+        </li>
+        <li class="cartao">
+          <h3>Sem faculdade</h3>
+          <p>Há muitos cargos acessíveis para quem tem apenas o ensino médio. A oportunidade ideal para começar uma carreira promissora.</p>
+        </li>
+        <li class="cartao">
+          <h3>Promoção justa</h3>
+          <p>As promoções são baseadas em mérito e critérios claros, permitindo um crescimento honesto e transparente.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FERRAMENTAS -->
+  <section class="secao">
+    <div class="container">
+      <h2>Tudo o que você precisa para ser aprovado, a um clique de distância</h2>
+      <ul class="chips">
+        <li>Livros Digitais (PDF)</li>
+        <li>Videoaulas dinâmicas</li>
+        <li>Livro Digital Interativo</li>
+        <li>Estratégia Cast</li>
+        <li>Sistema de Questões</li>
+        <li>Monitor de Performance</li>
+        <li>Mapas Mentais</li>
+        <li>Salas VIP</li>
+        <li>Trilha Estratégica</li>
+        <li>Resumos dos Professores</li>
+        <li>Simulados</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- PROFESSORES -->
+  <section class="secao secao--cinza">
+    <div class="container">
+      <h2>Aprenda rápido e de forma simples com professores especialistas em concursos</h2>
+      <ul class="professores">
+        <li><span aria-hidden="true">AF</span>Adriana Figueiredo</li>
+        <li><span aria-hidden="true">HA</span>Herbert Almeida</li>
+        <li><span aria-hidden="true">BL</span>Brunno Lima</li>
+        <li><span aria-hidden="true">NF</span>Nelma Fontana</li>
+        <li><span aria-hidden="true">SS</span>Silvio Sande</li>
+        <li><span aria-hidden="true">AF</span>Adriane Fauth</li>
+        <li><span aria-hidden="true">RT</span>Ricardo Torques</li>
+        <li><span aria-hidden="true">JA</span>Janaína Arruda</li>
+        <li><span aria-hidden="true">FL</span>Felipe Luccas</li>
+        <li><span aria-hidden="true">FD</span>Fábio Dutra</li>
+        <li><span aria-hidden="true">ER</span>Eduardo da Rocha</li>
+        <li><span aria-hidden="true">AD</span>Antônio Daud</li>
+        <li><span aria-hidden="true">RA</span>Renan Araújo</li>
+        <li><span aria-hidden="true">GP</span>Gilmar Possati</li>
+        <li><span aria-hidden="true">PB</span>Paulo Bilynskyj</li>
+        <li><span aria-hidden="true">GZ</span>Gabriela Zavadinack</li>
+        <li><span aria-hidden="true">GS</span>Guilherme Santana</li>
+        <li><span aria-hidden="true">RC</span>Renato da Costa</li>
+        <li><span aria-hidden="true">RM</span>Rubens Maurício</li>
+        <li><span aria-hidden="true">DC</span>Diego Carvalho</li>
+        <li><span aria-hidden="true">SF</span>Stefan Fantini</li>
+        <li><span aria-hidden="true">EM</span>Elisabete Moreira</li>
+        <li><span aria-hidden="true">AH</span>Alexandre Herculano</li>
+        <li><span aria-hidden="true">PS</span>Priscila Silveira</li>
+        <li><span aria-hidden="true">MF</span>Marcondes Fortaleza</li>
+        <li><span aria-hidden="true">CH</span>Carlos Henrique</li>
+        <li><span aria-hidden="true">AM</span>Adriana Menezes</li>
+        <li><span aria-hidden="true">LS</span>Leandro Signori</li>
+        <li><span aria-hidden="true">JZ</span>Jhoni Zini</li>
+        <li><span aria-hidden="true">RG</span>Rodolfo Gracioli</li>
+        <li><span aria-hidden="true">LM</span>Luciana Marinho</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- RESULTADOS -->
+  <section class="secao" id="resultados">
+    <div class="container">
+      <h2>É assim que estudam 70% dos aprovados nos principais concursos do país</h2>
+      <p class="secao__intro">Dos aprovados, 70% estudam com os materiais do Estratégia e 30% com outros cursinhos.</p>
+
+      <ul class="grade-cartoes grade-cartoes--4">
+        <li class="resultado">
+          <h3>TCU</h3>
+          <p class="pct">85%</p>
+          <p>dos aprovados dentro das vagas estudaram com a gente.</p>
+          <p class="destaque-res">Os 5 primeiros são do Estratégia.</p>
+        </li>
+        <li class="resultado">
+          <h3>CGU</h3>
+          <p class="pct">73%</p>
+          <p>dos aprovados dentro das vagas estudaram com a gente.</p>
+          <p class="destaque-res">Os 12 primeiros colocados são do Estratégia.</p>
+        </li>
+        <li class="resultado">
+          <h3>Polícia Federal</h3>
+          <p class="pct">65%</p>
+          <p>Ao todo, foram 977 aprovados dentro das 1.500 vagas.</p>
+          <p class="destaque-res">Os 1º, 2º e 3º colocados de Agente, Escrivão e Papiloscopista foram alunos do Estratégia.</p>
+        </li>
+        <li class="resultado">
+          <h3>Receita Federal</h3>
+          <p class="pct">83%</p>
+          <p>dos aprovados para Auditor Fiscal estudaram com o Estratégia.</p>
+          <p class="destaque-res">Os 10 primeiros colocados estudaram conosco.</p>
+        </li>
+        <li class="resultado">
+          <h3>ISS RJ</h3>
+          <p class="pct">86%</p>
+          <p>dos aprovados para Fiscal de Rendas estudaram com a gente.</p>
+          <p class="destaque-res">9 dos 10 primeiros colocados são do Estratégia.</p>
+        </li>
+        <li class="resultado">
+          <h3>ISS SP</h3>
+          <p class="pct">83%</p>
+          <p>dos aprovados para Auditor Fiscal estudaram com a gente.</p>
+          <p class="destaque-res">8 dos 10 primeiros colocados são do Estratégia.</p>
+        </li>
+        <li class="resultado">
+          <h3>INSS</h3>
+          <p class="pct">62%</p>
+          <p>dos aprovados foram nossos alunos.</p>
+          <p class="destaque-res">159 primeiros, 102 segundos e 75 terceiros lugares são do Estratégia.</p>
+        </li>
+        <li class="resultado">
+          <h3>PRF</h3>
+          <p class="pct">63%</p>
+          <p>Ao todo, foram 952 aprovados dentro das 1.500 vagas.</p>
+          <p class="destaque-res">77 dos 100 primeiros colocados foram nossos alunos.</p>
+        </li>
+        <li class="resultado">
+          <h3>ISS Fortaleza</h3>
+          <p class="pct">90%</p>
+          <p>dos aprovados para Auditor Fiscal foram nossos alunos.</p>
+          <p class="destaque-res">18 dos 20 primeiros colocados são do Estratégia.</p>
+        </li>
+        <li class="resultado">
+          <h3>Sefaz MG</h3>
+          <p class="pct">87%</p>
+          <p>dos aprovados para Auditor Fiscal – Tributação estudaram com a gente.</p>
+          <p class="destaque-res">O 1º colocado é do Estratégia.</p>
+        </li>
+        <li class="resultado">
+          <h3>TCM SP</h3>
+          <p class="pct">87%</p>
+          <p>dos aprovados foram nossos alunos.</p>
+          <p class="destaque-res">Todas as vagas para diversos cargos são do Estratégia.</p>
+        </li>
+        <li class="resultado">
+          <h3>TCE GO</h3>
+          <p class="pct">88%</p>
+          <p>dos aprovados estudaram com o Estratégia.</p>
+          <p class="destaque-res">Os 3 primeiros colocados de TI e Engenharia foram nossos alunos.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- COMPARATIVO COM CONCORRENTES -->
+  <section class="secao secao--cinza">
+    <div class="container">
+      <h2>Compare e comprove por que o Estratégia é o mais escolhido pelos aprovados</h2>
+
+      <div class="tabela-rolagem">
+        <table class="tabela">
+          <caption class="sr-only">Comparação de ferramentas entre o Estratégia e dois concorrentes</caption>
+          <thead>
+            <tr>
+              <th scope="col">Ferramentas</th>
+              <th scope="col" class="col-destaque">Estratégia</th>
+              <th scope="col">Concorrente G</th>
+              <th scope="col">Concorrente D</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Livro Digital (PDF) e videoaula com teoria descomplicada</th>
+              <td class="ok col-destaque"><span class="sr-only">Sim</span></td>
+              <td class="ok"><span class="sr-only">Sim</span></td>
+              <td class="ok"><span class="sr-only">Sim</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Resumos e mapas mentais feitos por professores</th>
+              <td class="ok col-destaque"><span class="sr-only">Sim</span></td>
+              <td class="ok"><span class="sr-only">Sim</span></td>
+              <td class="ok"><span class="sr-only">Sim</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Fórum de dúvidas com professores</th>
+              <td class="ok col-destaque"><span class="sr-only">Sim</span></td>
+              <td class="ok"><span class="sr-only">Sim</span></td>
+              <td class="ok"><span class="sr-only">Sim</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Livro Digital Interativo combinando texto, áudio e vídeo</th>
+              <td class="ok col-destaque"><span class="sr-only">Sim</span></td>
+              <td class="ok"><span class="sr-only">Sim</span></td>
+              <td class="ok"><span class="sr-only">Sim</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Videoconferência com experts (Sala VIP)</th>
+              <td class="ok col-destaque"><span class="sr-only">Sim</span></td>
+              <td class="ok"><span class="sr-only">Sim</span></td>
+              <td class="ok"><span class="sr-only">Sim</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Sistema de Questões</th>
+              <td class="texto col-destaque">3,2 milhões</td>
+              <td class="texto">2,6 milhões</td>
+              <td class="texto">500 mil</td>
+            </tr>
+            <tr>
+              <th scope="row">Garantia com reembolso integral</th>
+              <td class="texto col-destaque">7 dias</td>
+              <td class="texto">7 dias</td>
+              <td class="texto">7 dias</td>
+            </tr>
+            <tr>
+              <th scope="row">Simulados com questões inéditas e ranking</th>
+              <td class="ok col-destaque"><span class="sr-only">Sim</span></td>
+              <td class="ok"><span class="sr-only">Sim</span></td>
+              <td class="no"><span class="sr-only">Não tem</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Monitor de Performance para acompanhar evolução</th>
+              <td class="ok col-destaque"><span class="sr-only">Sim</span></td>
+              <td class="ok"><span class="sr-only">Sim</span></td>
+              <td class="no"><span class="sr-only">Não tem</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Livros Digitais Simplificados para um estudo acelerado</th>
+              <td class="ok col-destaque"><span class="sr-only">Sim</span></td>
+              <td class="ok"><span class="sr-only">Sim</span></td>
+              <td class="no"><span class="sr-only">Não tem</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Aulas gravadas em áudio (Estratégia Cast)</th>
+              <td class="ok col-destaque"><span class="sr-only">Sim</span></td>
+              <td class="ok"><span class="sr-only">Sim</span></td>
+              <td class="no"><span class="sr-only">Não tem</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Slides dos professores para facilitar a compreensão</th>
+              <td class="ok col-destaque"><span class="sr-only">Sim</span></td>
+              <td class="ok"><span class="sr-only">Sim</span></td>
+              <td class="no"><span class="sr-only">Não tem</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Questões comentadas criteriosamente por professores</th>
+              <td class="ok col-destaque"><span class="sr-only">Sim</span></td>
+              <td class="no"><span class="sr-only">Não tem</span></td>
+              <td class="no"><span class="sr-only">Não tem</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Curso de discursivas para treinar</th>
+              <td class="ok col-destaque"><span class="sr-only">Sim</span></td>
+              <td class="no"><span class="sr-only">Não tem</span></td>
+              <td class="no"><span class="sr-only">Não tem</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Monitorias temáticas com especialistas por área</th>
+              <td class="ok col-destaque"><span class="sr-only">Sim</span></td>
+              <td class="no"><span class="sr-only">Não tem</span></td>
+              <td class="no"><span class="sr-only">Não tem</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Cursos exclusivos para assinantes</th>
+              <td class="ok col-destaque"><span class="sr-only">Sim</span></td>
+              <td class="no"><span class="sr-only">Não tem</span></td>
+              <td class="no"><span class="sr-only">Não tem</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Livros Digitais grifados por aprovados</th>
+              <td class="ok col-destaque"><span class="sr-only">Sim</span></td>
+              <td class="no"><span class="sr-only">Não tem</span></td>
+              <td class="no"><span class="sr-only">Não tem</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Bizus Estratégicos (resumos direcionados)</th>
+              <td class="ok col-destaque"><span class="sr-only">Sim</span></td>
+              <td class="no"><span class="sr-only">Não tem</span></td>
+              <td class="no"><span class="sr-only">Não tem</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Passo Estratégico (revisões eficientes)</th>
+              <td class="ok col-destaque"><span class="sr-only">Sim</span></td>
+              <td class="no"><span class="sr-only">Não tem</span></td>
+              <td class="no"><span class="sr-only">Não tem</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Atualização permanente validada por alunos</th>
+              <td class="ok col-destaque"><span class="sr-only">Sim</span></td>
+              <td class="no"><span class="sr-only">Não tem</span></td>
+              <td class="no"><span class="sr-only">Não tem</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUTRAS OPÇÕES -->
+  <section class="secao">
+    <div class="container">
+      <h2>Outras formas de estudar</h2>
+
+      <ul class="grade-cartoes grade-cartoes--3">
+        <li class="cartao">
+          <h3>Pacotes atualizados</h3>
+          <p>Para focar apenas em um concurso específico: teoria completa em PDF e videoaulas, Sistema de Questões, fórum de dúvidas e muito mais.</p>
+          <a class="link-cartao" href="#">Ver pacotes</a>
+        </li>
+        <li class="cartao">
+          <h3>Assinatura Jurídica</h3>
+          <p>Cursos para todas as carreiras jurídicas: Magistratura, Procuradorias, Delegado de Polícia, Defensorias, Promotorias e Cartórios.</p>
+          <a class="link-cartao" href="#">Conhecer a área Jurídica</a>
+        </li>
+        <li class="cartao">
+          <h3>Assinatura Platinum</h3>
+          <p>Para quem busca uma preparação com atendimento personalizado.</p>
+          <a class="link-cartao" href="#">Conhecer a Platinum</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- DÚVIDAS -->
+  <section class="secao secao--cinza" id="duvidas">
+    <div class="container container--estreito">
+      <h2>Tire suas dúvidas</h2>
+
+      <div class="duvidas">
+        <details>
+          <summary>Como vou ter acesso às aulas?</summary>
+          <p>As aulas em vídeo são gravadas nos estúdios e disponibilizadas na plataforma junto com os livros digitais em PDF e demais recursos da sua assinatura. Você recebe o acesso imediatamente após a confirmação do pagamento (no caso do boleto, pode levar mais tempo).</p>
+        </details>
+        <details>
+          <summary>Posso baixar as aulas?</summary>
+          <p>Sim. O download é liberado na plataforma para as videoaulas e também para os livros digitais em PDF.</p>
+        </details>
+        <details>
+          <summary>Qual é a diferença entre pacotes e assinaturas?</summary>
+          <p>Os pacotes contêm tudo o que você precisa para a preparação e são sempre focados 100% no seu edital (pré ou pós-edital). Nos pacotes completos, você encontra todas as disciplinas cobradas no concurso de interesse, com aulas direcionadas somente para o concurso e cargo escolhidos. Por exemplo, o pacote completo de Analista do TJ SP (pós-edital) contém apenas as aulas sobre os assuntos cobrados nesse concurso.</p>
+          <p>Nas assinaturas, além do curso de Analista do TJ-SP, por exemplo, você tem acesso a todos os outros pacotes e cursos da plataforma, além de uma série de ferramentas exclusivas. Você pode acessar também os materiais de Analista do TRE ou de Agente da Polícia Federal. Embora o acesso seja franqueado a praticamente todos os cursos, só é possível se matricular simultaneamente em até 3 concursos. Sempre que precisar, você pode se desmatricular de um e se matricular em outro.</p>
+        </details>
+        <details>
+          <summary>Qual é a diferença entre pacote e pacotaço?</summary>
+          <p>O pacotaço abrange todos os materiais dos pacotes e oferece também acesso exclusivo às funcionalidades e aos benefícios do Passo Estratégico. Em outros termos: pacotaço = pacote + Passo Estratégico.</p>
+          <p>O Passo Estratégico é um material de revisão baseado no que foi mais cobrado nos últimos concursos. Aborda de forma sucinta e objetiva o que tem mais chance de cair em prova. É muito indicado para alunos intermediários e avançados que já tiveram um primeiro contato com a matéria, e contém relatórios com análises de especialistas de cada disciplina.</p>
+        </details>
+        <details>
+          <summary>Quais são as diferenças entre as assinaturas?</summary>
+          <p>A Assinatura Básica dá acesso a mais de 18 mil cursos em PDF, mais de 100 mil videoaulas, mais de 2,6 milhões de questões e mais de 15 mil aulas em áudio. Conta ainda com Livros Digitais Simplificados, Monitor de Performance, Cursos Especiais, Resumos, Marcação dos Aprovados e Mapas Mentais.</p>
+          <p>A Assinatura Premium tem tudo o que a Básica tem e inclui o planejamento direcionado das Trilhas Estratégicas, os relatórios analíticos dos Passos Estratégicos, as aulas temáticas das Monitorias, as videoconferências com coaches e professores das Salas VIP e as Rodadas Avançadas de Simulados. O período da assinatura pode ser de 1 ou 2 anos.</p>
+        </details>
+        <details>
+          <summary>E se eu quiser cancelar?</summary>
+          <p>Em regra, você conta com até 7 dias de garantia com reembolso integral.</p>
+        </details>
+        <details>
+          <summary>Posso adquirir somente um curso ou pacote, sem fazer a assinatura?</summary>
+          <p>Sim. Caso prefira comprar somente um pacote ou curso isoladamente, isso continua sendo possível.</p>
+        </details>
+        <details>
+          <summary>Quais são as formas de pagamento?</summary>
+          <p>As assinaturas de 1 ou 2 anos podem ser pagas no cartão de crédito em até 12x ou no boleto/Pix à vista. Neste último caso, há um desconto adicional de 10%. Também é possível usar 1 ou 2 cartões no momento da compra.</p>
+        </details>
+        <details>
+          <summary>Existem cursos que não estão disponíveis nas assinaturas?</summary>
+          <p>Sim. Alguns cursos, pelas suas especificidades, não estão inclusos: OAB e CFC (e outras certificações contábeis); carreiras jurídicas (Magistratura, Ministério Público, Procuradorias, Delegado, Defensor Público, Advocacia Pública); Forças Armadas; Diplomacia; cursos presenciais; recursos; cursos de Odontologia para Forças Armadas; cursos personalizados; curso presencial e on-line Cascavel; vestibulares e ENEM; e estudo acompanhado.</p>
+        </details>
+        <details>
+          <summary>Como funciona o atendimento ao cliente?</summary>
+          <p>Você pode tirar dúvidas por e-mail, pelas redes sociais ou pelo chat do site. O prazo de resposta é de até 48 horas.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHAMADA FINAL -->
+  <section class="chamada">
+    <div class="container chamada__grade">
+      <div>
+        <h2>Comece a estudar hoje</h2>
+        <p>Receba o acesso logo após a confirmação do pagamento. Se tiver dúvidas, fale com a equipe pelo WhatsApp.</p>
+      </div>
+      <div class="chamada__acoes">
+        <a class="btn btn--grande" href="#planos">Escolher minha assinatura</a>
+        <a class="link-claro" href="#">Fale com um atendente</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- RODAPÉ -->
+<footer class="rodape">
+  <div class="container">
+    <div class="rodape__colunas">
+      <nav aria-label="Institucional">
+        <h2>Institucional</h2>
+        <ul>
+          <li><a href="#">Quem somos</a></li>
+          <li><a href="#">Segurança</a></li>
+          <li><a href="#">Política de privacidade</a></li>
+          <li><a href="#">Termos de uso</a></li>
+          <li><a href="#">Eventos</a></li>
+          <li><a href="#">Programa de afiliados</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Suporte">
+        <h2>Suporte</h2>
+        <ul>
+          <li><a href="#">Cursos por concurso</a></li>
+          <li><a href="#">Coaching</a></li>
+          <li><a href="#">Por que escolher o Estratégia?</a></li>
+          <li><a href="#">Perguntas frequentes</a></li>
+          <li><a href="#">Depoimentos</a></li>
+          <li><a href="#">Certificados</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Concursos públicos">
+        <h2>Concursos públicos</h2>
+        <ul>
+          <li><a href="#">Concursos abertos</a></li>
+          <li><a href="#">Concursos fiscais</a></li>
+          <li><a href="#">Concursos policiais</a></li>
+          <li><a href="#">Concursos de tribunais</a></li>
+          <li><a href="#">Concursos de controle e gestão</a></li>
+          <li><a href="#">Concursos bancários e financeiros</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h2>Formas de pagamento</h2>
+        <p>Pix, boleto bancário, Mastercard, Visa, American Express, Diners Club e Elo.</p>
+      </div>
+    </div>
+    <p class="rodape__aviso">Protótipo de site para fins acadêmicos</p>
+  </div>
+</footer>
+
+</body>
+</html>
